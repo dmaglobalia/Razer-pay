@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="{% url 'pay' %} " method="POST">
+{% csrf_token %}    
+{% comment %} {% url 'pay' %} {% endcomment %}
+    type a payment:-
+    <input type="number" class="text" name ="pay",id = "pay">
+    <input type="submit" value="submit">
+</form>
+
+</body>
+</html>
