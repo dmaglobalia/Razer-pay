@@ -10,7 +10,7 @@ def home(request):
     if request.method == 'POST' :
         data = request.POST.get("pay")
 
-        print("++++++++++++++++++++++++++++++",data)
+
     return render(request,'one/home.html')
 
 
